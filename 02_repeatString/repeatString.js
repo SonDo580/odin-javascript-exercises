@@ -3,6 +3,10 @@ const repeatString = function(string, times) {
         return "ERROR";
     }
 
+    if (string === '') {
+        return '';
+    }
+
     let resultString = '';
 
     for (let i = 0; i < times; i++) {
