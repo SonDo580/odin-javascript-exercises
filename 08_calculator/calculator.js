@@ -18,16 +18,30 @@ const sum = function(array) {
   return sum;
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  let product = 1;
+  for (let num of array) {
+    product *= num;
+  }
+  return product;
 };
 
-const power = function() {
-	
+const power = function(base, power) {
+	let result = 1;
+  for (let i = 1; i <= power; i++) {
+    result *= base;
+  }
+  return result;
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+	let result = 1;
+  let i = n;
+  while (i > 0) {
+    result *= i;
+    i--;
+  }
+  return result;
 };
 
 // Do not edit below this line
