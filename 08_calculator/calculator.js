@@ -1,5 +1,9 @@
-const add = function() {
-	
+const add = function(...paras) {
+	let sum = 0;
+  for (let num of paras) {
+    sum += num;
+  }
+  return sum;
 };
 
 const subtract = function() {
